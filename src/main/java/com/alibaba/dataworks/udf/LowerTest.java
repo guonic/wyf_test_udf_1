@@ -33,6 +33,7 @@ public class LowerTest {
         System.out.println(TestUtil.join(out.get(3)));
         System.out.println("666");
         System.out.println("777");
+        System.out.println("777");
 
     }
 }
