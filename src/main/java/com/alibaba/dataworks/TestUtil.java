@@ -39,12 +39,15 @@ public class TestUtil {
     public static WareHouse initWarehouse() {
         File exampleProjectDir = new File("warehouse" + File.separator + DEMO_PROJECT);
         if (exampleProjectDir.exists()) {
+            boolean canread = exampleProjectDir.canRead();
             return WareHouse.getInstance("warehouse");
         } else {
             exampleProjectDir = new File("../warehouse" + File.separator + DEMO_PROJECT);
             if (exampleProjectDir.exists()) {
                 return WareHouse.getInstance("../warehouse");
             }
+            String name = exampleProjectDir.getAbsolutePath();
+            System.out.println(name);
         }
         throw new RuntimeException("warehouse dir not exists");
     }
