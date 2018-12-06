@@ -24,6 +24,7 @@ public class StudioUDAFTest {
         inputFromTable();
     }
 
+
     public static void simpleInput() throws Exception {
         BaseRunner runner = new AggregatorRunner(null,
             "com.alibaba.dataworks.udaf.StudioUDAF");

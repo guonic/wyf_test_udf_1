@@ -31,5 +31,8 @@ public class LowerTest {
         System.out.println(TestUtil.join(out.get(1)));
         System.out.println(TestUtil.join(out.get(2)));
         System.out.println(TestUtil.join(out.get(3)));
+        System.out.println("666");
+        System.out.println("777");
+
     }
 }
